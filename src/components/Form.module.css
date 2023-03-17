@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Noto+Sans+JP:wght@500;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: rgb(54, 54, 54);
+  --light-color: #ffffff;
+  --dark-color: #000000;
+  background-color: var(--primary-color);
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  height: 115%;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  background-color: #d4145a;
+  height: 10rem;
+}
+
+.image {
+  z-index: 1;
+  width: 200px;
+  height: 45px;
+  margin-right: 40%;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+.circle1 {
+  width: calc(15vw + 50px);
+  height: calc(1vh + 50px);
+  background-color: #d4145a;
+  border-radius: 50%;
+  position: absolute;
+  top: 8rem;
+  left: 0px;
+}
+
+.circle2 {
+  width: calc(20vw + 50px);
+  height: calc(1vh + 50px);
+  background-color: #d4145a;
+  border-radius: 50%;
+  position: absolute;
+  top: 8rem;
+  left: 15%;
+}
+
+.circle3 {
+  width: calc(20vw + 50px);
+  height: calc(1vh + 50px);
+  background-color: #d4145a;
+  border-radius: 50%;
+  position: absolute;
+  top: 8rem;
+  left: 30%;
+}
+
+.circle4 {
+  width: calc(25vw + 50px);
+  height: calc(1vh + 50px);
+  background-color: #d4145a;
+  border-radius: 50%;
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+}
+
+.circle5 {
+  width: calc(25.768vw);
+  height: calc(1vh + 50px);
+  background-color: #d4145a;
+  border-radius: 50%;
+  position: absolute;
+  top: 8rem;
+  left: 74%;
+}
+
+.form {
+  display: grid;
+  grid-gap: 1rem;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 8rem;
+  width: 50%;
+}
+
+.formGroup {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+}
+
+.formControl {
+  display: grid;
+  padding: 0.7rem;
+  margin: 10px;
+  background-color: var(--light-color);
+  color: rgb(240, 240, 240);
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  font-family: "Noto Sans";
+  font-weight: 500;
+  background: radial-gradient(circle, #d4145a, #b1144e);
+}
+
+.formLabel {
+  margin-left: 2.5%;
+}
+
+.formInput {
+  margin-top: 5px;
+  height: 20px;
+  border-radius: 0.4rem;
+  border: none;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  font-size: 1rem;
+  font-family: "Noto Sans";
+  font-weight: 500;
+  color: black;
+}
+
+.formControlCheckbox {
+  display: grid;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-top: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  width: 30%;
+  height: fit-content;
+  background-color: var(--light-color);
+  color: rgb(240, 240, 240);
+  border-radius: 0.7rem;
+  background: radial-gradient(circle, #d4145a, #b1144e);
+}
+
+.formCheckbox {
+  margin: 0.5rem 0;
+  width: 20px;
+  height: 20px;
+  justify-self: center;
+}
+
+.formControlLabel {
+  font-size: 0.1rem;
+  color: rgb(240, 240, 240);
+  width: fit-content;
+  align-content: center;
+  font-size: 1rem;
+  font-family: "Noto Sans";
+  font-weight: 500;
+}
+
+.formControlSubmit {
+  background: radial-gradient(circle, #d4145a, #b1144e);
+  width: 20%;
+  height: fit-content;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 10px;
+  color: rgb(240, 240, 240);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: "Noto Sans";
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formControlSubmit:hover {
+  scale: 105%;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}

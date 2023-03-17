@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Form from "./components/Form";
+import Answers from "./components/Answers";
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
+  
+  const generateId = () => {
+    return uuidv4();
+  };
+
+  const id = generateId();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="https://greydive-challenge-fd3c7.firebaseapp.com/" element={<Form id={id} />} />
+          <Route path={`https://greydive-challenge-fd3c7.firebaseapp.com/${id}`} element={<Answers id={id} />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
