@@ -15,8 +15,8 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="https://greydive-challenge-fd3c7.firebaseapp.com/" element={<Form id={id} />} />
-          <Route path={`https://greydive-challenge-fd3c7.firebaseapp.com/${id}`} element={<Answers id={id} />} />
+          <Route path="/" element={<Form id={id} />} />
+          <Route path={`/${id}`} element={<Answers id={id} />} />
         </Routes>
       </Router>
     </div>
