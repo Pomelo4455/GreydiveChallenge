@@ -7,7 +7,7 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDVomvwWPtNa1RM-Bs-IHwZHMQf70X5Q-M",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "greydive-challenge-fd3c7.firebaseapp.com",
   projectId: "greydive-challenge-fd3c7",
   storageBucket: "greydive-challenge-fd3c7.appspot.com",
